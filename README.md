@@ -10,7 +10,7 @@ TSNE Visualization of COVID-19 related academic articles.
 - 6200 total articles
 
 # Custom CORD19 NLP Search engine
-![Alt text](img/CORD19_nlp_search_engine?raw=true "CORD19_nlp_search_engine")
+![Alt text](img/CORD19_nlp_search_engine.png?raw=true "CORD19_nlp_search_engine")
 - BM25 natural language search engine
 - Data Processing
 1.   Remove duplicate articles
