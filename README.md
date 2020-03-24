@@ -2,27 +2,28 @@
 [Active colab notebook](https://colab.research.google.com/drive/1aFxUJgP1GeMqqw3bUDQIzoYIaYHWKCAr) : Resources for working with CORD19 (Novel Coronovirus 2019) NLP dataset - 
 
 ## Getting started
-    - Visit [COVID-19 Open Research Dataset Challenge (CORD-19)](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge) and download the data (requires Kaggle account)
-    - Clone this [repository](https://github.com/mrubash1/Covid19_Search_Tool), move the data to Covid19_Search_Tool/data, and unzip the files
-    - build the attached conda environment
-    ```bash
-    conda create --name cord19-search python=3
-    source activate cord19-search
-    pip install -r requirements.txt
-    ```
-    - Dowload the NLTK packages for text processing and search
-    ```bash
-    python -m nltk.downloader punkt
-    python -m nltk.downloader stopwords
-    python -m nltk.downloader wordnet
-    ```
-    - Downloading the BERT model by going to Covid_Search_Tool/models
-    ```bash
-    wget https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip
-    unzip uncased_L-12_H-768_A-12.zip
-    pip install bert-serving-server --no-deps
-    rm uncased_L-12_H-768_A-12.zip
-    ```
+- Visit [COVID-19 Open Research Dataset Challenge (CORD-19)](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge) and download the data (requires Kaggle account)
+- Clone this [repository](https://github.com/mrubash1/Covid19_Search_Tool), move the data to Covid19_Search_Tool/data, and unzip the files
+- build the attached conda environment
+```bash
+conda create --name cord19 python=3.6.9
+source activate cord19
+pip install -r requirements.txt
+~/.profile
+```
+- Dowload the NLTK packages for text processing and search
+```bash
+python -m nltk.downloader punkt
+python -m nltk.downloader stopwords
+python -m nltk.downloader wordnet
+```
+- Downloading the BERT model by going to Covid_Search_Tool/models
+```bash
+wget https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip
+unzip uncased_L-12_H-768_A-12.zip
+pip install bert-serving-server==1.10 --no-deps
+rm uncased_L-12_H-768_A-12.zip
+ ```   
 
 
 
