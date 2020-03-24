@@ -1,7 +1,32 @@
 # Covid19_Search_Tool
 [Active colab notebook](https://colab.research.google.com/drive/1aFxUJgP1GeMqqw3bUDQIzoYIaYHWKCAr) : Resources for working with CORD19 (Novel Coronovirus 2019) NLP dataset - 
 
-### Interactive visualization of COVID-19 related academic articles
+## Getting started
+    - Visit [COVID-19 Open Research Dataset Challenge (CORD-19)](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge) and download the data (requires Kaggle account)
+    - Clone this [repository](https://github.com/mrubash1/Covid19_Search_Tool), move the data to Covid19_Search_Tool/data, and unzip the files
+    - build the attached conda environment
+    ```
+    conda create --name cord19-search python=3
+    source activate cord19-search
+    pip install -r requirements.txt
+    ```
+    - Dowload the NLTK packages for text processing and search
+    ```
+    python -m nltk.downloader punkt
+    python -m nltk.downloader stopwords
+    python -m nltk.downloader wordnet
+    ```
+    - Downloading the BERT model by going to Covid_Search_Tool/models
+    ```
+    wget https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip
+    unzip uncased_L-12_H-768_A-12.zip
+    pip install bert-serving-server --no-deps
+    rm uncased_L-12_H-768_A-12.zip
+    ```
+
+
+
+## Interactive visualization of COVID-19 related academic articles
 ![Alt text](img/CORD19_Bert_Embeddings_6000_articles_in_top_journals.png?raw=true "CORD19_Bert_Embeddings_6000_articles_in_top_journals.png")
 **TSNE Visualization of COVID-19 related academic articles**
 - Color encodes journal
