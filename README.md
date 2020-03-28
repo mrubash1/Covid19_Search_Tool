@@ -2,6 +2,26 @@
 [Active colab notebook](https://colab.research.google.com/drive/1aFxUJgP1GeMqqw3bUDQIzoYIaYHWKCAr) : Resources for working with CORD19 (Novel Coronovirus 2019) NLP dataset - 
 
 ## Getting started
+
+### Via Docker
+
+The easiest way to run this package is with Docker.
+1. Install [Docker](https://docs.docker.com/install/)
+2. Pull the Docker image from Docker Hub:
+
+        docker pull rccreager/covid19-search-tool:Covid19_Search_Tool_03-25-20 
+3. Run the Docker image:
+
+        docker run -it -p 8888:8888 rccreager/covid19-search-tool:Covid19_Search_Tool_03-25-20 
+4. (Optional) Start Jupyter from inside the docker image:
+
+        jupyter notebook --ip 0.0.0.0 --no-browser --allow-root
+5. (Optional) Open Jupyter on your local machine by copy-pasting the printed address into a web brower. It will look something like:
+
+        http://127.0.0.1:8888/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+### Building Yourself:
+
 - Visit [COVID-19 Open Research Dataset Challenge (CORD-19)](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge) and download the data (requires Kaggle account)
 - Clone this [repository](https://github.com/mrubash1/Covid19_Search_Tool), move the data to Covid19_Search_Tool/data, and unzip the files
 - build the attached conda environment
