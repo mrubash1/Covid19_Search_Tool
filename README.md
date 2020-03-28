@@ -16,7 +16,7 @@ The easiest way to run this package is with Docker.
 4. (Optional) Start Jupyter from inside the docker image:
 
         jupyter notebook --ip 0.0.0.0 --no-browser --allow-root
-5. (Optional) Open Jupyter on your local machine by copy-pasting the printed address. It will look something like:
+5. (Optional) Open Jupyter on your local machine by copy-pasting the printed address into a web brower. It will look something like:
 
         http://127.0.0.1:8888/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
