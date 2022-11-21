@@ -3,5 +3,5 @@ numpy==1.18.2
 pandas==1.0.3
 requests==2.23.0
 tensorboard==1.15.0
-tensorflow==2.5.1
+tensorflow==2.9.3
 rank-bm25==0.2
