@@ -1,7 +1,7 @@
 nltk==3.4.5
 numpy==1.18.2
 pandas==1.0.3
-requests==2.23.0
+requests==2.31.0
 tensorboard==1.15.0
 tensorflow==2.5.1
 rank-bm25==0.2
